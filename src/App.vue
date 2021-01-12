@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <img @click="editMode = !editMode" id="icon" src="http://filtroswillybusch.com.pe/aplicativo/img/edit.svg" alt />
-    <img id="logo-back" src="http://filtroswillybusch.com.pe/aplicativo/img/1.png" alt />
+    <img @click="editMode = !editMode" id="icon" src="./assets/static/edit.svg" alt />
+    <img id="logo-back" src="./assets/static/1.png" alt />
     <LogoResize :editMode="editMode" />
-    <img id="titulo-back" src="http://filtroswillybusch.com.pe/aplicativo/img/2.png" alt />
+    <img id="titulo-back" src="./assets/static/2.png" alt />
     <h1
       @click="showModal(titulo, 'titulo')"
       id="titulo"
@@ -45,7 +45,7 @@
         >{{cellTextThree.text}}</p>
       </div>
       <div id="caracteristicas">
-        <img id="carac-img" src="http://filtroswillybusch.com.pe/aplicativo/img/3.png" alt />
+        <img id="carac-img" src="./assets/static/3.png" alt />
       </div>
       <h3 id="carac-text">CARACTERISTICAS</h3>
       <p
@@ -86,7 +86,7 @@
       </div>
     </div>
     <ImageResizeEnd :editMode="editMode" />
-    <img id="end-logo-back" src="http://filtroswillybusch.com.pe/aplicativo/img/4.png" alt />
+    <img id="end-logo-back" src="./assets/static/4.png" alt />
     <div id="end-logo">
       <h1 @click="showModal(endTitle, 'endTitle')" :style="{fontSize: `${endTitle.fontSize}em`}">{{endTitle.text}}</h1>
     </div>
