@@ -23,21 +23,39 @@
           :style="{fontSize: `${tableTitle.fontSize}em`}"
         >{{tableTitle.text.toUpperCase()}}</h2>
       </div>
+      <div class="table-cell" :style="{borderLeft: '2px solid black'}">
+        <p
+          :style="{fontSize: '1em'}"
+          class="cell-text"
+        >DIÁMETRO EXTERIOR</p>
+      </div>
       <div class="table-cell">
+        <p
+          :style="{fontSize: '1em'}"
+          class="cell-text"
+        >DIÁMETRO INTERIOR</p>
+      </div>
+      <div class="table-cell" :style="{borderRight: '2px solid black'}">
+        <p
+          :style="{fontSize: '1em'}"
+          class="cell-text"
+        >ALTURA</p>
+      </div>
+      <div class="table-cell" :style="{borderLeft: '2px solid black', borderBottom: '2px solid black'}">
         <p
           :style="{fontSize: `${cellTextOne.fontSize}em`}"
           @click="showModal(cellTextOne, 'cellTextOne')"
           class="cell-text"
         >{{cellTextOne.text}}</p>
       </div>
-      <div class="table-cell">
+      <div class="table-cell" :style="{borderBottom: '2px solid black'}">
         <p
           :style="{fontSize: `${cellTextTwo.fontSize}em`}"
           @click="showModal(cellTextTwo, 'cellTextTwo')"
           class="cell-text"
         >{{cellTextTwo.text}}</p>
       </div>
-      <div class="table-cell">
+      <div class="table-cell" :style="{borderRight: '2px solid black', borderBottom: '2px solid black'}">
         <p
           :style="{fontSize: `${cellTextThree.fontSize}em`}"
           @click="showModal(cellTextThree, 'cellTextThree')"

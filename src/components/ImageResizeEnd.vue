@@ -28,12 +28,11 @@ export default {
       this.height = rect.height
     },
     fileOpen() {
-        console.log('hola')
       if (!this.editMode) {
         this.$refs.fileIn.click()
       }
     },
-    onSelectFile(e) {
+    onSelectFile() {
       const input = this.$refs.fileIn
       const files = input.files
       if (files && files[0]) {

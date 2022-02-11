@@ -32,7 +32,7 @@ export default {
         this.$refs.fileInput.click()
       }
     },
-    onSelectFile(e) {
+    onSelectFile() {
       const input = this.$refs.fileInput
       const files = input.files
       if (files && files[0]) {

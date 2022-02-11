@@ -99,7 +99,6 @@ body {
     text-align: center;
   }
   .table-cell {
-    grid-row: 2 / 4;
     grid-column: span 1;
     border: 1px solid black;
   }
